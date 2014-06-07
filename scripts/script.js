@@ -8,9 +8,8 @@ $(function() {
 
 
   $('#red').on('click', function(event){
-
     var y = event.pageY;
-    var result = Math.round((y - top) * .833333331)
+    var result = Math.round(y - top);
     console.log("size of h1 is " + head + " point of y on svg is " + y +
                 " the top of id red is " + top + " the result is " + result);
   });

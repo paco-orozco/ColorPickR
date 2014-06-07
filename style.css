@@ -1,7 +1,21 @@
+#title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h1{margin:0;
+   padding:0;
+   font-family:'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue','Open-Light',sans-serif;
+   font-weight:200;
+   font-size:3em;
+   color:#000000;
+   text-align: center;
+}
+
+
 /* Margins are set to zero for the purpose of cross browser compatibility */
 .row{margin:0 auto;width:960px;overflow:hidden;display:block;}
 .row .row{margin:0 -16px 0 -16px;width:auto;display:inline-block}
-
 /* REGULAR VIEW */
 [class^="column_"],
 [class*=" column_"]{
@@ -18,7 +32,6 @@
     .column_10{width:768px}
     .column_11{width:848px}
     .column_12{width:928px}
-
 /* BIG VIEW */
 @media only screen and (min-width:1200px){
     .row{width:1200px;}
