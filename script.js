@@ -1,28 +1,17 @@
 $(function() {
 
   var input = $(this),
-      position = input.offset();
+      position = input.offset(),
+      doc = $(document).height(),
+      head = $('#title').height(),
+      top = $('#red').offset().top;
 
-  var $red = $('<svg height="306" width="306">'+
-                  '<defs>'+
-                    '<linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">'+
-                      '<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />'+
-                      '<stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />'+
-                    '</linearGradient>'+
-                  '</defs>'+
-                  '<circle id="red" cx="153" cy="153" r="153" fill="url(#grad1)" />'+
-                '</svg>');
-
-  $('body').append($red.fadeIn('slow'));
-
-  // var get_color = function(pick){
-  //   var position = pick.pageY;
-  //   console.log(position);
-  // }
 
   $('#red').on('click', function(event){
-    console.log('position f Y is ' + event.pageY);
-    var result = Math.round(event.pageY * .83333331) - 6;
-    console.log(result);
+
+    var y = event.pageY;
+    var result = Math.round((y - top) * .833333331)
+    console.log("size of h1 is " + head + " point of y on svg is " + y +
+                " the top of id red is " + top + " the result is " + result);
   });
 })
