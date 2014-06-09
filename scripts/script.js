@@ -55,7 +55,7 @@ $(function() {
     finalG = typeof(gVal) !== 'undefined' ? gVal : 0;
     finalB = typeof(bVal) !== 'undefined' ? bVal : 0;
     // append the values in the correct manner
-    $('#color').css('background-color', 'rgb(' + finalR + ',' + finalG + ',' + finalB + ')');
+    $('#color').css('fill', 'rgb(' + finalR + ',' + finalG + ',' + finalB + ')');
   })
 
 
