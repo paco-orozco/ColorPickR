@@ -12,6 +12,8 @@ h1{margin:0;
    text-align: center;
 }
 
+svg {margin-left: 52px;}
+
 
 /* Margins are set to zero for the purpose of cross browser compatibility */
 .row{margin:0 auto;width:960px;overflow:hidden;display:block;}
@@ -32,6 +34,7 @@ h1{margin:0;
     .column_10{width:768px}
     .column_11{width:848px}
     .column_12{width:928px}
+    svg {margin-left: 16px;}
 /* BIG VIEW */
 @media only screen and (min-width:1200px){
     .row{width:1200px;}
@@ -70,6 +73,7 @@ h1{margin:0;
     .column_10{width:612px}
     .column_11{width:676px}
     .column_12{width:740px}
+    svg {margin:0 auto;}
 }
 
 /* MOBILE VIEW 1 */
@@ -79,6 +83,7 @@ h1{margin:0;
     [class^="column_"],
     [class*=" column_"]
     {width:300px;margin:10px 0 0 0}
+    svg {margin-left: 22px;}
 }
 
 /* MOBILE VIEW 2 */
@@ -87,5 +92,6 @@ h1{margin:0;
     .row .row{margin:0;width:auto;display:inline-block}
     [class^="column_"],
     [class*=" column_"]{margin:10px 0 0 0;width:456px}
+    svg {margin-left: 100px;}
 
 }
