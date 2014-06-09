@@ -43,7 +43,7 @@ svg {margin-left: 52px;}
     .column_10{width:768px}
     .column_11{width:848px}
     .column_12{width:928px}
-    .offset_4{margin-left:352px}
+    .offset_4{margin-left:336px}
     svg {margin-left: 16px;}
 /* BIG VIEW */
 @media only screen and (min-width:1200px){
@@ -63,7 +63,7 @@ svg {margin-left: 52px;}
     .column_10{width:960px}
     .column_11{width:1060px}
     .column_12{width:1160px}
-    .offset_4{margin-left:436px}
+    .offset_4{margin-left:420px}
 }
 
 /*  TABLET VIEW */
@@ -84,7 +84,7 @@ svg {margin-left: 52px;}
     .column_10{width:612px}
     .column_11{width:676px}
     .column_12{width:740px}
-    .offset_4{margin-left:270px}
+    .offset_4{margin-left:254px}
     svg {margin:0 auto;}
 }
 
