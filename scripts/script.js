@@ -51,8 +51,11 @@ $(function() {
       bVal = data.pop();
       console.log('blue space ' + 'and pop is '+ bVal);
     }
-
-    $('#color').css('background-color', 'rgb(' + rVal + ',' + '0' + ',' + '0' + ')');
+    finalR = typeof(rVal) !== 'undefined' ? rVal : 0;
+    finalG = typeof(gVal) !== 'undefined' ? gVal : 0;
+    finalB = typeof(bVal) !== 'undefined' ? bVal : 0;
+    // append the values in the correct manner
+    $('#color').css('background-color', 'rgb(' + finalR + ',' + finalG + ',' + finalB + ')');
   })
 
 
