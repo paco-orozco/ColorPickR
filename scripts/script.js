@@ -21,35 +21,27 @@ $(function() {
 
     // determine whether the action corresponds to r, g, or b
     if(posX > redX && posX < greenX){
-      console.log('this is red');
       var r = posY;
       data.push(r);
     }
     if(posX > greenX && posX < blueX){
-      console.log('this is green');
       var g = posY;
       data.push(g);
     }
     if(posX > blueX ){
-      console.log('this is blue');
       var b = posY;
       data.push(b);
     }
 
-    console.log(data);
-
     // keep track of the values that are being fired
     if(data[data.length - 1] == r && (posX > redX && posX < greenX)){
       rVal = data.pop();
-      console.log('red space ' + 'and pop is ' + rVal);
     }
     if(data[data.length - 1] == g && (posX > greenX && posX < blueX)){
       gVal = data.pop();
-      console.log('green space  ' + 'and pop is '+ gVal);
     }
     if(data[data.length - 1] == b && (posX > blueX)){
       bVal = data.pop();
-      console.log('blue space ' + 'and pop is '+ bVal);
     }
     finalR = typeof(rVal) !== 'undefined' ? rVal : 0;
     finalG = typeof(gVal) !== 'undefined' ? gVal : 0;
@@ -65,7 +57,6 @@ $(function() {
     }
     // final hex value
     hexVal = '#'+ to_hex(finalR) + to_hex(finalG) + to_hex(finalB);
-    console.log('hex value of is ' + hexVal)
 
     // update the color stats
     $('#lowTitle').empty();
