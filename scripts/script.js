@@ -55,6 +55,11 @@ $(function() {
         hex = dec.toString(16);
         return hex.length == 2 ? hex : '0' + hex;
     }
+
+    // hsb converter
+    function to_hsb(val) {
+
+    }
     // final hex value
     hexVal = '#'+ to_hex(finalR) + to_hex(finalG) + to_hex(finalB);
 
