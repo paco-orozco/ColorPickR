@@ -54,22 +54,24 @@ $(function() {
     finalR = typeof(rVal) !== 'undefined' ? rVal : 0;
     finalG = typeof(gVal) !== 'undefined' ? gVal : 0;
     finalB = typeof(bVal) !== 'undefined' ? bVal : 0;
+
     // append the values in the correct manner
     rgb = 'rgb(' + finalR + ',' + finalG + ',' + finalB + ')';
-    // hex converter
 
+    // hex converter
     function to_hex(dec) {
         hex = dec.toString(16);
         return hex.length == 2 ? hex : '0' + hex;
     }
-
+    // final hex value
     hexVal = '#'+ to_hex(finalR) + to_hex(finalG) + to_hex(finalB);
     console.log('hex value of is ' + hexVal)
 
-    // fill the svg circle
+    // update the color stats
     $('#lowTitle').empty();
     $('#lowTitle').append('<h2>' + rgb + '</h2>' + '</br>' +
                           '<h2>' + 'hex ' + hexVal + '</h2>');
+    // fill the svg circle
     $('#color').css('fill', rgb);
 
 
